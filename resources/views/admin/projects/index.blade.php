@@ -1,7 +1,7 @@
-@extends('layouts.admin')
-<h1>Pagina index</h1>
-
+@extends('layouts.app')
+@section('content')
 <div class="container">
+    <h1>Pagina index</h1>
     <div class="row">
 @foreach ($projects as $project)
 
@@ -15,7 +15,13 @@
         <p class="date">Date Pubblicazione: {{$project->date}}</p>
         <a href="{{route('admin.projects.show', $project->id)}}"><button>Più Info</button></a>
     </div>
+    </div>
+    
     
 @endforeach
+<a href="{{route('admin.projects.create')}}"><button>Aggiungi altra merda</button></a>
+
 </div>
+
 </div>
+@endsection
