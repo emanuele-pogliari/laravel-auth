@@ -10,8 +10,10 @@
 
     .panel-name {
         @include side-group-divider;
-        color: $primary-color;
-        font-size: 1.5em;
+        h2 {
+            color: $primary-color;
+            font-size: 1.5em;
+        }
     }
 
     .search {

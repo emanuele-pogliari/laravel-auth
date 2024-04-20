@@ -1,7 +1,10 @@
 <div class=" my-content-side p-2 d-flex flex-column justify-content-between">
     {{-- <button class="position-absolute">Resize</button> --}}
     <div>
-    <h2 class="panel-name m-3 fs-3 py-4">Admin Panel</h2>
+        <div class="panel-name d-flex align-items-center gap-3 m-3 py-4">
+            <i class="fa fs-1 fa-gear"></i>
+            <h2 class="m-0 fs-3 ">Admin Panel</h2>
+        </div>
     
     <div class="search my-4">
         <div class="input-group">
