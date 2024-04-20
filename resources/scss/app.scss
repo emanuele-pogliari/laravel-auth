@@ -1,1 +1,17 @@
-@import '~bootstrap/scss/bootstrap'
+@import "~bootstrap/scss/bootstrap";
+
+#sidebar {
+    height: calc(100vh - 67.59px);
+    background-color: #354554;
+
+    .my-content-side {
+        height: 100%;
+        h3 {
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+        .usr-box img {
+            width: 50px;
+        }
+    }
+}
