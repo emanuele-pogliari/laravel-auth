@@ -6,13 +6,21 @@
 <div class="container-fluid">
 
 <div class="row">
-    <div id="sidebar" class="col-3">
-@include('admin/partials/side')
-</div>
-<div class="col-9">
-    <h1>Benvenuto {{auth()->user()->name}}</h1>
-    qui per vedere tutti i progetti<link rel="stylesheet" href="">
-    <a href="{{route('admin.projects.index')}}"><button>Clicca</button></a>
+    <div id="sidebar">
+        @include('admin/partials/side')
+    </div>
+    <div id="main-content">
+        <h1>Welcome Back {{auth()->user()->name}}!</h1>
+            <div class="card">
+                <h2>Click here to see all projects</h2>
+            </div>
+            <div class="card">
+                <h2>Click here to see all projects</h2>
+            </div>
+            <div class="card">
+                <h2>Click here to see all projects</h2>
+            </div>
+    <a href="{{route('admin.projects.index')}}"><button class="btn btn-primary">Clicca</button></a>
 </div>
 </div>
 </div>

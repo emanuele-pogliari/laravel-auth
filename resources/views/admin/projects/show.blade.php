@@ -4,7 +4,7 @@
 @section('content')
     <h1>Test show page</h1>
     <div class="container">
-        <div class="row">
+        <div class="row w-100">
     
         <div class="card col-4">
         <img class="img_prj" src="{{$project->img_url}}" alt="">

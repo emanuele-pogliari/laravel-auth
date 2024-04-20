@@ -1,21 +1,41 @@
-.search {
-    position: relative;
-    box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
-}
+@import "/resources/scss/partials/variables";
+@import "/resources/scss/partials/mixins";
+.my-content-side {
+    height: 100%;
+    h3 {
+        color: $primary-color;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
 
-.search input {
-    height: 60px;
-    text-indent: 25px;
-    border: 2px solid #d6d4d4;
-}
+    .panel-name {
+        @include side-group-divider;
+        color: $primary-color;
+        font-size: 1.5em;
+    }
 
-.search input:focus {
-    box-shadow: none;
-    border: 2px solid blue;
-}
+    .search {
+        position: relative;
+        box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+    }
 
-.search .fa-search {
-    position: absolute;
-    top: 20px;
-    left: 16px;
+    .search input {
+        height: 50px;
+        text-indent: 25px;
+        border: 2px solid #d6d4d4;
+    }
+
+    .search .fa-search {
+        position: absolute;
+        top: 15px;
+        left: 16px;
+    }
+
+    .usr-box {
+        //border top and bottom 1 pixel solid grey
+        @include side-group-divider;
+        img {
+            width: 50px;
+        }
+    }
 }

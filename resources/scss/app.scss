@@ -1,17 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
+@import "/resources/scss/partials/variables";
 
 #sidebar {
+    width: 300px;
     height: calc(100vh - 67.59px);
     background-color: #354554;
+    overflow-y: auto;
+}
 
-    .my-content-side {
-        height: 100%;
-        h3 {
-            font-size: 1.5em;
-            font-weight: 700;
-        }
-        .usr-box img {
-            width: 50px;
-        }
-    }
+#main-content {
+    width: calc(100vw - 300px);
 }
