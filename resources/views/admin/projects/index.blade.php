@@ -1,11 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('content')
 <div class="container">
-    <h1>Pagina index</h1>
     <div class="row">
         @if($projects->count() == 0)
         <div class="col">
-            <h3>NO PROJECT FOUNDS</h3>
+            <h3>NO PROJECT FOUND</h3>
         </div>
       @endif
 @foreach ($projects as $project)
@@ -24,7 +23,7 @@
     
     
 @endforeach
-<a href="{{route('admin.projects.create')}}"><button>Aggiungi altra merda</button></a>
+<a href="{{route('admin.projects.create')}}"><button>Aggiungi un progetto</button></a>
 
 </div>
 

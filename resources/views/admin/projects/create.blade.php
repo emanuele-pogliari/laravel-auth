@@ -1,10 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 
 @section('content')
 <div class="container p-5">
-        <h1>Test create page</h1>
-        <h2>Add new shit</h2>
+        <h2>Aggiungi un progetto</h2>
       <form class="my-5" action="{{route('admin.projects.store')}}" method="POST">
      
         @csrf
@@ -49,7 +48,6 @@
         @enderror
         </div>
     
-      
         <div class="mb-3">
           <label for="url_repo" class="form-label">Url Repo</label>
           <input type="text" class="form-control @error('url_repo') is-invalid @enderror" id="url_repo" name="url_repo" value="{{ old('url_repo')}}">
