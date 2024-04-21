@@ -8,6 +8,10 @@
     overflow-y: auto;
 }
 
-#main-content {
+#main-content,
+#main-content-index,
+#main-content-show,
+#main-content-edit,
+#main-content-create {
     width: calc(100vw - 300px);
 }

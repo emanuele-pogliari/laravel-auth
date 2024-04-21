@@ -3,7 +3,6 @@
 .my-content-side {
     height: 100%;
     h3 {
-        color: $primary-color;
         font-size: 1.5em;
         font-weight: 700;
     }
@@ -11,7 +10,6 @@
     .panel-name {
         @include side-group-divider;
         h2 {
-            color: $primary-color;
             font-size: 1.5em;
         }
     }

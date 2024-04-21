@@ -42,7 +42,7 @@
                     <div class="card">
                         <div class="card-header fs-2">{{ __('Placeholder') }}</div>
                         <div class="card-body fs-4 px-5 d-flex flex-column gap-4">
-                           Placeholder for fure functionality 1
+                           Placeholder for fure functionality 2
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                     <div class="card">
                         <div class="card-header fs-2">{{ __('Placeholder') }}</div>
                         <div class="card-body fs-4 px-5 d-flex flex-column gap-4">
-                           Placeholder for fure functionality 1
+                           Placeholder for fure functionality 3
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     <div class="card">
                         <div class="card-header fs-2">{{ __('Placeholder') }}</div>
                         <div class="card-body fs-4 px-5 d-flex flex-column gap-4">
-                           Placeholder for fure functionality 1
+                           Placeholder for fure functionality 4
                         </div>
                     </div>
                 </div>
@@ -66,11 +66,10 @@
                     <div class="card">
                         <div class="card-header fs-2">{{ __('Placeholder') }}</div>
                         <div class="card-body fs-4 px-5 d-flex flex-column gap-4">
-                           Placeholder for fure functionality 1
+                           Placeholder for fure functionality 5
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
 </div>

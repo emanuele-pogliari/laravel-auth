@@ -2,8 +2,15 @@
 
 
 @section('content')
-<div class="container p-5">
-        <h2>Aggiungi un progetto</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div id="sidebar">
+            @include('admin/partials/side')
+        </div>
+        <div id="main-content-create">
+            <h1 class="p-5">Test edit page</h1>
+        <div class="container p-5">
+        <h2>Add a Project</h2>
       <form class="my-5" action="{{route('admin.projects.store')}}" method="POST">
      
         @csrf
@@ -70,9 +77,12 @@
       
       
         <div class="btn-box text-center mt-5">
-        <button type="submit" class="add-comic">Save Changes</button>
+        <button type="submit" class="btn btn-lg btn-primary">Save Changes</button>
+        </div>
+    </form>
+</div>
       </div>
-      
-      </form>
-      </div>
+         </div>
+</div>
+
 @endsection
