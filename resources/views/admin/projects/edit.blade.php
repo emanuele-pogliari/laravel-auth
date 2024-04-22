@@ -11,7 +11,7 @@
             <h1>Test edit page</h1>
             <div class="container p-5">
                 <h2>Modify {{$project->name}}</h2>
-              <form class="my-5" action="{{route('admin.projects.update', $project->id)}}" method="POST">
+              <form class="my-5" action="{{route('admin.projects.update', $project->id)}}" method="POST" enctype="multipart/form-data">
              
                 @csrf
                 @method('PUT')
@@ -38,7 +38,7 @@
               
                 <div class="mb-3">
                     <label for="img_url" class="form-label">Img Url</label>
-                    <input type="text" class="form-control @error('img_url') is-invalid @enderror" id="img_url" name="img_url" value="{{ old('img_url') ?? $project->img_url}}">
+                    <input type="file" class="form-control @error('img_url') is-invalid @enderror" id="img_url" name="img_url">
                     @error('img_url')
                     <div class="invalid-feedback">
                         {{$message}}

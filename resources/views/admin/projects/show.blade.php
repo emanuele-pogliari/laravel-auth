@@ -17,7 +17,7 @@
             
           
               <div class="card">
-                <img class="img_prj" src="{{$project->img_url}}" alt="">
+                <img class="img_prj" src="{{asset('storage/' . $project->img_url)}}" alt="">
                 <div class="card-body">
                   <h3 class="title">Name: {{$project->name}}</h3>
                   <p class="desc fs-4">Description: {{$project->description}}</p>
