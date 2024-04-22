@@ -70,6 +70,12 @@ class ProjectController extends Controller
     {
         $request->validated();
 
+        if ($request->hasFile('img_url')) {
+            $path = Storage::disk('public')->put('project_images', $request->img_url);
+
+            $project->img_url = $path;
+        }
+
         $project->update($request->all());
 
         $project->save();
