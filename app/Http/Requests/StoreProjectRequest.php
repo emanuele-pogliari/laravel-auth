@@ -25,7 +25,7 @@ class StoreProjectRequest extends FormRequest
             'name' => 'required|max:100',
             'description' => 'nullable|max:2000',
             'used_tech' => 'nullable',
-            'img_url' => 'required',
+            'img_url' => 'file|max:1024|mimes:jpeg,jpg,png,gif,webp,bmp',
             'url_repo' => 'required',
             'date' => 'nullable|date',
         ];
