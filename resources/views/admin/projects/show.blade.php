@@ -15,9 +15,9 @@
             <a href="{{route('admin.projects.index')}}" class="p-5">Back to index</a>
             <div class="container">
             
-          
-              <div class="card">
-                <img class="img_prj" src="{{asset('storage/' . $project->img_url)}}" alt="">
+              <div class="row justify-content-center ">
+              <div class="card w-50">
+                <img class="img_prj img-fluid" src="{{asset('storage/' . $project->img_url)}}" alt="">
                 <div class="card-body">
                   <h3 class="title">Name: {{$project->name}}</h3>
                   <p class="desc fs-4">Description: {{$project->description}}</p>
@@ -60,6 +60,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
     </div>
   </div>
